@@ -35,7 +35,20 @@
  **/
 
 // ++ YOUR Code below (write the 'makeGreeting' function): ++
-
+ 
+function calcSpeedTicket(speed_limit, reported_speed, protected_area) {
+	if (reported_speed <= speed_limit) {
+		return 0;
+	} else if ((reported_speed - speed_limit) < 20 && protected_area === false) {
+		return 150;
+	} else if ((reported_speed - speed_limit) < 20 && protected_area === true) {
+		return 300;
+	} else if ((reported_speed - speed_limit) >= 20 && protected_area === false) {
+		return 250;
+	} else if ((reported_speed - speed_limit) >= 20 && protected_area === true) {
+		return 500;
+	}
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

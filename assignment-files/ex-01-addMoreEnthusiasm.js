@@ -10,8 +10,12 @@
 
 // (DEMO) You, the student, will write the function
 
+function addMoreEnthusiasm(input) {
+	var x = input;
+	return x + "!!!";
+} 
 
-
+console.log(addMoreEnthusiasm);
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~

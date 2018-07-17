@@ -12,8 +12,16 @@
 
 // ++ YOUR Code below (write the 'makeGreeting' function): ++
 
-
-
+function justOneString(value1, value2){
+	 if (typeof value1 === "string" && typeof value2 !== "string") {
+	 	return true;
+	 } else if (typeof value1 !== "string" && typeof value2 === "string") {
+	 	return true;
+	 } else {
+	 	return false;
+	 }
+	 }
+	 	 
 /*-------------------TEST-1-------------------------*/
 // function receives 2 strings
 //    and returns boolean true if it is a vowel

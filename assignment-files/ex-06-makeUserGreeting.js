@@ -21,6 +21,14 @@
 
 // ++ YOUR Code below (write the 'makeGreeting' function): ++
 
+function makeUserGreeting(username, boolean) {
+	if (boolean === true) {
+		return "Good to see you again, " + username + ".";
+	} else {
+		return "Welcome, " + username + "!";
+	}	
+}
+
 
 // *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
 // *~*~*~*~*~*~*~* Tests (Don't Touch) *~*~*~*~*~*~*~*~*
